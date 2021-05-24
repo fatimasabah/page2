@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+}
+nav .nav {
+  margin: 30px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav .nav ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+  margin-top: 16px;
+}
+nav .nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 25px;
+}
+nav .nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 10px;
+  position: relative;
+}
+nav .nav .nav-icon {
+  margin-left: 40px;
+}
+nav .nav .nav-icon img {
+  height: 25px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+nav ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 10px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 10px;
+  background-color: #f14a60;
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+.bodypage {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 80px;
+}
+
+.leftpage {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-left: 180px;
+  margin-top: 30px;
+}
+.leftpage h1 {
+  font-size: 100px;
+}
+.leftpage h3 {
+  font-size: 35px;
+}
+.leftpage span {
+  color: #f14a60;
+}
+.leftpage p {
+  font-size: 15px;
+  color: #999;
+  margin: 50px 0;
+}
+.leftpage .btn {
+  margin-bottom: 50px;
+  margin-left: -15px;
+}
+.leftpage .btn button {
+  padding: 7px 30px;
+  margin-right: 15px;
+  outline: none;
+  cursor: pointer;
+  color: #fb7381;
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid #fb7381;
+}
+.leftpage .btn .butncolor {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fb7381), to(#f14a60));
+  background: linear-gradient(#fb7381, #f14a60);
+  -webkit-box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+          box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+  color: #fff;
+}
+
+.rightpage {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-left: -80px;
+  margin-top: -20px;
+}
+.rightpage img {
+  width: 100%;
+}
+
+.search {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 3px;
+  border: 1px solid #ddd;
+  margin: 10px 0 30px;
+}
+.search input {
+  width: 100%;
+  margin-left: 15px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+.search img {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.soical {
+  width: 200px;
+  text-align: center;
+  opacity: 0.4;
+  position: relative;
+  margin-left: 160px;
+}
+.soical img {
+  height: 20px;
+  margin: 0 14px;
+}
+.soical.soical::after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  left: -160px;
+  top: 10px;
+}
+
+.soical::after {
+  content: "";
+  width: 150px;
+  height: 1px;
+}
+
+@media (max-width: 1434px) {
+  .bodypage {
+    display: block;
+  }
+
+  .leftpage {
+    width: 100%;
+    margin-left: 400px;
+  }
+
+  .rightpage {
+    width: 100%;
+  }
+  .rightpage img {
+    height: 80%;
+    width: 80%;
+    margin-left: 180px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1434px) {
+  .allpage {
+    width: 100%;
+  }
+
+  .leftpage {
+    width: 50%;
+  }
+
+  .rightpage {
+    width: 50%;
+  }
+}
+@media (max-width: 1086px) {
+  nav {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .nav-icon img {
+    margin-left: 100px;
+  }
+
+  .leftpage {
+    margin-left: 250px;
+  }
+
+  .rightpage {
+    width: 100%;
+  }
+  .rightpage img {
+    height: 80%;
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */

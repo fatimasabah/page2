@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis',sans-serif;
+}
+nav{
+    width: 80%;
+    margin: auto;
+    .nav{
+        margin: 30px auto;
+        align-items: center;
+        display: flex;
+    
+        ul{
+            flex: 1;
+            text-align: right;
+            margin-top: 16px;
+            li{
+                display: inline-block;
+                list-style: none;
+                margin: 0 25px;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    padding: 0 10px;
+                    position: relative 
+                                                                      ;
+                }
+            }
+          
+        }
+        .nav-icon{
+            margin-left: 40px;
+            
+            img{
+                height: 25px;
+                margin-left: 40px;
+                cursor: pointer;
+
+            }
+        }
+    }
+ul{
+    flex: 1;
+    text-align: right;
+    li{
+        display: inline-block;
+        list-style: none;
+        margin: 0 25px;
+        a{
+            text-decoration: none;
+            color: #000;
+            padding: 0 10px;
+            position: relative;
+                                                              
+        }
+    }
+}
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background-color: #f14a60;
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+    transition: 0.5s;
+
+}}
+ul li a:hover::after{
+    width: 100%;
+}
+
+.bodypage{
+    display: inline-flex;
+    margin-top: 80px;
+    
+    }
+
+    .leftpage{
+        flex-basis: 50%;
+        margin-left: 180px;
+        margin-top: 30px;
+        h1{
+            font-size: 100px;
+        }
+        h3{
+            font-size: 35px;
+        }
+        span{
+         color: #f14a60;
+        }
+        p{
+            font-size: 15px;
+            color: #999;
+            margin: 50px 0;
+        }
+    
+        .btn{
+            margin-bottom: 50px;
+            margin-left: -15px;
+            button{
+                padding: 7px 30px;
+                margin-right: 15px;
+                outline: none;
+            
+                cursor: pointer;
+                color: #fb7381;
+                background: transparent;
+                border-radius: 20px;
+                border: 1px solid #fb7381;
+            }
+            .butncolor{
+                background: linear-gradient(#fb7381,#f14a60);
+                box-shadow: 0 2px 15px rgba(248,38,103,0.26);
+                color: #fff;
+            }
+            
+        }
+        
+    }
+    
+
+.rightpage{
+    flex-basis: 50%;
+    margin-left: -80px;
+    margin-top: -20px;
+    img{
+        width: 100%;
+        //margin-left: 200px;
+    }}
+
+    .search{
+        width: 45%;
+        display: flex;
+        padding-bottom: 3px;
+        border: 1px solid #ddd;
+        margin: 10px 0 30px;
+        input{
+            width: 100%;
+            margin-left: 15px;
+            font-size: 17px;
+            border: none;
+            outline: none;
+        }
+        img{
+            height: 25px;
+            width: 25px;
+            cursor: pointer;
+            margin-top: -6px;
+        }
+    }
+  
+
+    .soical{
+        width: 200px;
+        text-align: center;
+        opacity: .4;
+        position: relative;
+        margin-left: 160px;
+        img{
+
+          height: 20px;
+          margin: 0 14px;
+        }
+        &.soical::after{
+            content: '';
+            width: 150px;
+            height: 1px;
+        background-color: #000;
+        position:absolute;
+        left: -160px;
+        top: 10px;
+        }
+    } 
+    .soical::after{
+        content: '';
+        width: 150px;
+        height: 1px;
+    }
+
+
+@media (max-width:1434px){
+    .bodypage{
+        display: block;
+    }
+    .leftpage{
+        width: 100%;
+        margin-left: 400px;
+    }
+    .rightpage{
+        width: 100%;
+        img{
+            height: 80%;
+            width: 80%;
+            margin-left: 180px;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (min-width:1434px){
+    .allpage{
+    width: 100%;
+    
+}
+.leftpage{
+    width: 50%;
+
+}
+.rightpage{
+    width: 50%;
+   
+}
+
+
+}
+
+@media (max-width:1086px){
+    nav{
+        display: inline-flex;
+        ul{
+            display: none;
+        }
+        .nav-icon{
+            img{
+
+            
+            margin-left: 100px;
+        }
+        }
+    }
+    .leftpage{
+        //width: 100%;
+        margin-left: 250px;
+    }
+    .rightpage{
+        width: 100%;
+        img{
+            height: 80%;
+            width: 80%;
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+    }
+}
